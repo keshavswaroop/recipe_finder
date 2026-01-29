@@ -1,16 +1,82 @@
-# React + Vite
+# 🍳 Recipe Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application built using Vite that allows users to search for recipes and view full cooking details using the free TheMealDB API.
 
-Currently, two official plugins are available:
+This project is for learning and practice purposes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Search recipes by name
+- View recipe image, category, and area
+- Click on a recipe to see:
+  - Ingredients with measurements
+  - Step-by-step instructions
+- Responsive grid layout
+- Scrollable popup modal
+- Built with plain CSS (no UI frameworks)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- React (Vite)
+- JavaScript
+- CSS
+- Axios
+- TheMealDB Public API
+
+---
+
+## 📂 Project Structure
+
+```bash
+recipe-finder/
+├── src/
+│ ├── components/
+│ │ ├── SearchBar.jsx
+│ │ ├── RecipeList.jsx
+│ │ ├── RecipeCard.jsx
+│ │ └── RecipeModal.jsx
+│ ├── api.js
+│ ├── App.jsx
+│ ├── App.css
+│ ├── main.jsx
+│ └── index.css
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## ▶️ How to Run
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Open your browser and go to:
+
+```bash
+http://localhost:5173
+```
+
+## 🌐 API Used:
+
+TheMealDB: https://www.themealdb.com/api.php
+
+Endpoint:
+
+```bash
+https://www.themealdb.com/api/json/v1/1/search.php?s=chicken
+```
